@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{--color1: #22ce78;
+    --color2: #f4f4fc;
+    --color3: white;
+    --color4: #FF6B6B;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    background-color: var(--color2);
+    color: var(--color1);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color1);
+}
+
+header .logo {
+    max-width: 100%;
+    height: auto;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    gap: 2rem;
+    width: 100%;
+}
+
+.caja-caja-texto {
+    flex: 1;
+}
+
+.caja_de_texto {
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    border: 2px solid var(--color1);
+    border-radius: 8px;
+    background-color: var(--color2);
+    font-size: 1.25rem;
+    color: var(--color1);
+}
+
+.caja_de_texto::placeholder {
+    color: var(--color1);
+}
+.ocultar{
+    display: none;
+}
+
+.boton_de_caja {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.boton_de_caja input {
+    flex: 1;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.encriptados {
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+.desencriptados {
+    background-color: #D8DFE8;
+    color: var(--color1);
+    border: 2px solid var(--color1);
+}
+
+.borrar {
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+
+.seccion-two {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50rem;
+}
+
+.carcel_de_muneco img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caja_de_parrafo h3 {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.caja_de_parrafo p {
+    font-size: 1rem;
+    color: #495057;
+    
+}
+
+.contenedor_resultado p {
+    display: block;
+    font-size: 1.25rem; 
+    color: var(--color1);
+    word-wrap: break-word;
+    width: 100%rem;
+    height: 80%;
+}
+
+
+.boton_para_copiar input {
+    padding: 1rem 2rem;
+    background-color: var(--color1);
+    color: var(--color3);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color1);
+    color: var(--color3);
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 950px) {
+    html {
+        font-size: 14px; /
+    }
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 1rem 5%;
+    }
+
+    .boton_de_caja {
+        flex-direction: column;
+    }
+
+    .boton_de_caja input {
+        width: 100%;
+    }
+    .seccion-two{
+        width: 100%;
+    }
+}
